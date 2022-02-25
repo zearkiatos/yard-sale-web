@@ -1,0 +1,30 @@
+{
+  "name": "yard-sale-web",
+  "version": "1.0.0",
+  "description": "Reactjs ⚛️ Yard sale 🏷 ecommerce 🛒 web application.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zearkiatos/yard-sale-web.git"
+  },
+  "keywords": [
+    "react",
+    "javascript",
+    "ecommerce",
+    "yard",
+    "sale"
+  ],
+  "author": "Pedro Capriles <caprilespe@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zearkiatos/yard-sale-web/issues"
+  },
+  "homepage": "https://github.com/zearkiatos/yard-sale-web#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
