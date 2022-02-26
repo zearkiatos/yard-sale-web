@@ -11,6 +11,6 @@ RUN npm install --silent
 RUN npm install react-scripts -g --silent
 RUN npx browserslist@latest --update-db
 
-EXPOSE 8080
+EXPOSE 3000
 
 ENTRYPOINT ["sh", "./docker/entrypoint.sh"]
