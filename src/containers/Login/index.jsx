@@ -6,31 +6,35 @@ const Login = () => {
     <div className="login">
       <div className="form-container">
         <img className="logo" src="./logos/logo_yard_sale.svg" alt="logo" />
-        <h1 className="title">Create a new password</h1>
-        <p className="subtitle">Enter a new password for your account</p>
-        <form action="/" className="form">
-          <label className="label" for="password">
-            Password
-          </label>
-          <input
-            className="input input-password"
-            id="password"
-            placeholder="********"
-            type="password"
-          />
-          <label className="label" for="new-password">
-            Re-enter password
-          </label>
-          <input
-            className="input input-password"
-            id="new-password"
-            placeholder="********"
-            type="password"
-          />
-          <button className="primary-button login-button" type="submit">
-            Confirm
-          </button>
-        </form>
+        <div>
+          <form action="/" className="form">
+            <label className="label" for="email">
+              Email
+            </label>
+            <input
+              className="input input-email"
+              id="email"
+              placeholder="email@example.com"
+              type="email"
+            />
+            <label className="label" for="password">
+              Password
+            </label>
+            <input
+              className="input input-password"
+              id="password"
+              placeholder="********"
+              type="password"
+            />
+            <button className="primary-button login-button" type="submit">
+              Log in
+            </button>
+            <a href="/">Forgot my password</a>
+          </form>
+        </div>
+        <div>
+          <button className="secondary-button signup-button">Sign up</button>
+        </div>
       </div>
     </div>
   );

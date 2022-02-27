@@ -1,13 +1,14 @@
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
 import Layout from "../containers/Layout";
-import Login from "../containers/Login";
+import Router from '../router';
 import "../styles/global.scss";
 
 const App = () => {
   return (
-    <Layout>
-      <Login />
-    </Layout>
+    <BrowserRouter>
+        <Router />
+    </BrowserRouter>
   );
 };
 
