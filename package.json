@@ -8,7 +8,7 @@
     "build": "webpack --mode production",
     "firebase:deploy": "firebase deploy",
     "prefirebase:deploy": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:ci": "CI=false npm run build"
   },
   "repository": {
     "type": "git",
