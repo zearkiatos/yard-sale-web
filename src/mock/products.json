@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "image": "https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "price": 120.00,
+        "name": "Bike"
+    },
+    {
+        "id": 2,
+        "image": "https://images.pexels.com/photos/2883049/pexels-photo-2883049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "price": 420.00,
+        "name": "Bookstand"
+    },
+    {
+        "id": 3,
+        "image": "https://images.pexels.com/photos/5961216/pexels-photo-5961216.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "price": 600.00,
+        "name": "PS5"
+    }
+]
