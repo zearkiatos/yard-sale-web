@@ -5,6 +5,7 @@ import Home from "../pages/Home";
 import NotFound from "../pages/NotFound";
 import RecoveryPassword from "../containers/RecoveryPassword";
 import CreateAccount from "../pages/CreateAccount";
+import EditAccount from "../pages/EditAccount";
 
 const Router = () => (
   <Routes>
@@ -12,6 +13,7 @@ const Router = () => (
     <Route path="/login" element={<Login />} />
     <Route path="/recovery-password" element={<RecoveryPassword />} />
     <Route path="/create-account" element={<CreateAccount />} />
+    <Route path="/edit-account" element={<EditAccount />} />
     <Route path="*" element={<NotFound />} />
   </Routes>
 );
