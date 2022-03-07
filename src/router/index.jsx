@@ -1,11 +1,12 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Login from "../containers/Login";
+import Login from "../pages/Login";
 import Home from "../pages/Home";
 import NotFound from "../pages/NotFound";
-import RecoveryPassword from "../containers/RecoveryPassword";
+import RecoveryPassword from "../pages/RecoveryPassword";
 import CreateAccount from "../pages/CreateAccount";
 import EditAccount from "../pages/EditAccount";
+import NewPassword from "../pages/NewPassword";
 
 const Router = () => (
   <Routes>
@@ -14,6 +15,7 @@ const Router = () => (
     <Route path="/recovery-password" element={<RecoveryPassword />} />
     <Route path="/create-account" element={<CreateAccount />} />
     <Route path="/edit-account" element={<EditAccount />} />
+    <Route path="/new-password" element={<NewPassword />} />
     <Route path="*" element={<NotFound />} />
   </Routes>
 );

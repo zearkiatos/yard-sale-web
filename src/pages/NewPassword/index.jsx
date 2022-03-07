@@ -1,13 +1,14 @@
 import React, { Fragment } from 'react';
-import Login from '../../containers/Login';
+import NewPassword from '../../components/NewPassword';
 import Header from '../../components/Header';
-const LoginPage = () => {
+
+const NewPasswordPage = () => {
     return (
         <Fragment>
             <Header />
-            <Login />
+            <NewPassword />
         </Fragment>
-    )
-};
+    );
+}
 
-export default LoginPage;
+export default NewPasswordPage;
