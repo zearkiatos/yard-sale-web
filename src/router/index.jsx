@@ -7,6 +7,7 @@ import RecoveryPassword from "../pages/RecoveryPassword";
 import CreateAccount from "../pages/CreateAccount";
 import EditAccount from "../pages/EditAccount";
 import NewPassword from "../pages/NewPassword";
+import MyOrder from '../pages/MyOrder';
 
 const Router = () => (
   <Routes>
@@ -16,6 +17,7 @@ const Router = () => (
     <Route path="/create-account" element={<CreateAccount />} />
     <Route path="/edit-account" element={<EditAccount />} />
     <Route path="/new-password" element={<NewPassword />} />
+    <Route path="/my-order" element={<MyOrder />} />
     <Route path="*" element={<NotFound />} />
   </Routes>
 );
