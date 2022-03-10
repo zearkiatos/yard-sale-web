@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "articlesQuantity": 2,
+        "createdDate": "2021-03-09T22:27:22.768Z",
+        "payment": 560
+    },
+    {
+        "id": 2,
+        "articlesQuantity": 6,
+        "createdDate": "2021-01-09T10:45:12.123Z",
+        "payment": 230
+    }
+]

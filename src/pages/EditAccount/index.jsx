@@ -1,14 +1,14 @@
 import React, { Fragment } from "react";
 import Header from "../../components/Header";
-import ProductList from "../../containers/ProductList";
+import { EditAccountForm } from "../../components/AccountForm";
 
-const Home = () => {
+const EditAccount = () => {
   return (
     <Fragment>
       <Header />
-      <ProductList />
+      <EditAccountForm />
     </Fragment>
   );
 };
 
-export default Home;
+export default EditAccount;
