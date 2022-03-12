@@ -21,6 +21,14 @@ jobs:
       run: echo "The build number $GITHUB_RUN_NUMBER 🏗"
     - name: Install dependencies
       run: npm install
+    - name: Create .env
+      run: |
+        touch .env &&
+        echo "ENVIRONMENT=${ENVIRONMENT}" > .env
+        echo "YARD_SALE_API_BASE_URL=${YARD_SALE_API_BASE_URL}" >> .env
+      env:
+        ENVIRONMENT: ${{ secrets.ENVIRONMENT }}
+        YARD_SALE_API_BASE_URL: ${{ secrets.YARD_SALE_API_BASE_URL }}
     - name: Public URL
       run: export PUBLIC_URL=https://zearkiatos.github.io/sale-yard-web
     - name: Build docker 🐳
