@@ -1,15 +1,18 @@
-import React, { Fragment } from "react";
-import Menu from '@components/Menu';
+import React, { Fragment, useState } from "react";
+import Menu from "@components/Menu";
 import "@styles/header.scss";
 
-import iconMenu from '@icons/icon_menu.svg';
-import logo from '@logos/logo_yard_sale.svg';
-import shoppingCartIcon from '@icons/icon_shopping_cart.svg';
+import iconMenu from "@icons/icon_menu.svg";
+import logo from "@logos/logo_yard_sale.svg";
+import shoppingCartIcon from "@icons/icon_shopping_cart.svg";
 const Header = () => {
+  const [toggle, setToggle] = useState(false);
+  const handleToggle = () => setToggle(!toggle);
+  const renderMenu = () => toggle && <Menu />
   return (
     <Fragment>
       <nav className="secondary-menu">
-        <Menu />
+        {renderMenu()}
       </nav>
       <nav>
         <img className="menu" src={iconMenu} alt="menu" />
@@ -38,7 +41,9 @@ const Header = () => {
         </div>
         <div className="navbar-right">
           <ul>
-            <li className="navbar-email">caprilespe@outlook.com</li>
+            <li className="navbar-email" onClick={handleToggle}>
+              caprilespe@outlook.com
+            </li>
             <li className="navbar-shopping-cart">
               <img src={shoppingCartIcon} alt="Shopping cart" />
               <div>2</div>

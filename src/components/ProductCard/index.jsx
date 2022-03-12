@@ -4,7 +4,6 @@ import addToCart from "@icons/bt_add_to_cart.svg";
 
 const ProductCard = ({ image, price, name }) => {
   const [cart, setCart] = useState([]);
-  const addToCartHandle = () => {setCart([...cart, {image, price, name}]);};
   return (
     <div className="product-card">
       <img className="product-img" src={image} alt="" />
@@ -13,7 +12,7 @@ const ProductCard = ({ image, price, name }) => {
           <p>${price.toFixed(2)}</p>
           <p>{name}</p>
         </div>
-        <figure onClick={addToCartHandle}>
+        <figure>
           <img src={addToCart} alt="" />
         </figure>
       </div>
