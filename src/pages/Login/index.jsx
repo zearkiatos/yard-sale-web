@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
-import Login from '../../containers/Login';
-import Header from '../../components/Header';
+import Login from '@containers/Login';
+import Header from '@components/Header';
 const LoginPage = () => {
     return (
         <Fragment>

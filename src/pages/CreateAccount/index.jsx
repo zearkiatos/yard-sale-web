@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import Header from "../../components/Header";
+import Header from "@components/Header";
 import { CreateAccountForm } from "../../components/AccountForm";
 
 const CreateAccount = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import ItemCard from "../../components/itemCard";
+import ItemCard from "@components/itemCard";
 
 const OrderDetails = ({ items }) => {
   const renderItemList = items.map(({ id, image, price, name, quantity }) => {

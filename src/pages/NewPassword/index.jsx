@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
-import NewPassword from '../../components/NewPassword';
-import Header from '../../components/Header';
+import NewPassword from '@components/NewPassword';
+import Header from '@components/Header';
 
 const NewPasswordPage = () => {
     return (

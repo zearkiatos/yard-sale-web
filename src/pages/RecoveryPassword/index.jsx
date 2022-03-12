@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
-import Header from '../../components/Header';
-import RecoveryPassword from '../../containers/RecoveryPassword';
+import Header from '@components/Header';
+import RecoveryPassword from '@containers/RecoveryPassword';
 
 const RecoveryPasswordPage = () => {
     return (

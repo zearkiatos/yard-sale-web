@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
-import Header from "../../components/Header";
-import { EditAccountForm } from "../../components/AccountForm";
+import Header from "@components/Header";
+import { EditAccountForm } from "@components/AccountForm";
 
 const EditAccount = () => {
   return (

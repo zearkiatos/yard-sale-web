@@ -1,6 +1,10 @@
 import React, { Fragment } from "react";
-import Menu from '../Menu';
-import "../../styles/header.scss";
+import Menu from '@components/Menu';
+import "@styles/header.scss";
+
+import iconMenu from '@icons/icon_menu.svg';
+import logo from '@logos/logo_yard_sale.svg';
+import shoppingCartIcon from '@icons/icon_shopping_cart.svg';
 const Header = () => {
   return (
     <Fragment>
@@ -8,9 +12,9 @@ const Header = () => {
         <Menu />
       </nav>
       <nav>
-        <img className="menu" src="./icons/icon_menu.svg" alt="menu" />
+        <img className="menu" src={iconMenu} alt="menu" />
         <div className="navbar-left">
-          <img className="logo" src="./logos/logo_yard_sale.svg" alt="logo" />
+          <img className="nav-logo" src={logo} alt="logo" />
           <ul>
             <li>
               <a href="/">All</a>
@@ -36,7 +40,7 @@ const Header = () => {
           <ul>
             <li className="navbar-email">caprilespe@outlook.com</li>
             <li className="navbar-shopping-cart">
-              <img src="./icons/icon_shopping_cart.svg" alt="Shopping cart" />
+              <img src={shoppingCartIcon} alt="Shopping cart" />
               <div>2</div>
             </li>
           </ul>

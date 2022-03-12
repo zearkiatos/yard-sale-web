@@ -1,6 +1,6 @@
 import React from "react";
-import OrderHeader from "../../components/OrderHeader";
-import OrderDetails from "../OrderDetails";
+import OrderHeader from "@components/OrderHeader";
+import OrderDetails from "@containers/OrderDetails";
 
 const Order = ({ order }) => {
   const { createdDate, totalPrice, articlesQuantity, items } = order;

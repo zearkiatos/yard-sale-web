@@ -1,14 +1,14 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Login from "../pages/Login";
-import Home from "../pages/Home";
-import NotFound from "../pages/NotFound";
-import RecoveryPassword from "../pages/RecoveryPassword";
-import CreateAccount from "../pages/CreateAccount";
-import EditAccount from "../pages/EditAccount";
-import NewPassword from "../pages/NewPassword";
-import MyOrder from '../pages/MyOrder';
-import MyOrders from '../pages/MyOrders';
+import Login from "@pages/Login";
+import Home from "@pages/Home";
+import NotFound from "@pages/NotFound";
+import RecoveryPassword from "@pages/RecoveryPassword";
+import CreateAccount from "@pages/CreateAccount";
+import EditAccount from "@pages/EditAccount";
+import NewPassword from "@pages/NewPassword";
+import MyOrder from '@pages/MyOrder';
+import MyOrders from '@pages/MyOrders';
 
 const Router = () => (
   <Routes>

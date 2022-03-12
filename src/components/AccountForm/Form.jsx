@@ -1,6 +1,6 @@
 import React from 'react';
 import ACCOUNT_TYPE from './accountType';
-import '../../styles/account.scss';
+import '@styles/account.scss';
 
 const Form = ({ type }) => {
     const renderCreateForm = ACCOUNT_TYPE.CREATE === type;

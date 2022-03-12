@@ -1,5 +1,5 @@
 import React from "react";
-import '../../styles/orderHeader.scss';
+import '@styles/orderHeader.scss';
 
 const OrderHeader = ({ createdDate, articlesQuantity, totalPrice}) => {
   return (

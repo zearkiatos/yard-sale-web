@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/orderCard.scss";
+import "@styles/orderCard.scss";
 
 const OrderCard = ({ articlesQuantity, createdDate, payment }) => {
   return (
