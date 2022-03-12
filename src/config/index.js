@@ -1,5 +1,6 @@
 const config = {
-  ENVIRONMENT: process.env.NODE_ENV,
+  ENVIRONMENT: process.env.ENVIRONMENT,
+  YARD_SALE_API_BASE_URL: process.env.YARD_SALE_API_BASE_URL,
   FIREBASE: {
     API_KEY: process.env.FIREBASE_API_KEY,
     AUTH_DOMAIN: process.env.FIREBASE_AUTH_DOMAIN,
