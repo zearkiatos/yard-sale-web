@@ -1,11 +1,12 @@
 import React from "react";
 import "@styles/login.scss";
+import logos from '@logos/logo_yard_sale.svg';
 
 const Login = () => {
   return (
     <div className="login">
       <div className="form-container">
-        <img className="logo" src="./logos/logo_yard_sale.svg" alt="logo" />
+        <img className="login-logo" src={logos} alt="logo" />
         <div>
           <form action="/" className="form">
             <label className="label" for="email">

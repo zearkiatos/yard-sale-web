@@ -1,5 +1,6 @@
 import React from "react";
 import "@styles/orderCard.scss";
+import arrow from '@icons/flechita.svg';
 
 const OrderCard = ({ articlesQuantity, createdDate, payment }) => {
   return (
@@ -9,7 +10,7 @@ const OrderCard = ({ articlesQuantity, createdDate, payment }) => {
         <span> {articlesQuantity} articles</span>
       </p>
       <p>${payment.toFixed(2)}</p>
-      <img src="./icons/flechita.svg" alt="Arrow" />
+      <img src={arrow} alt="Arrow" />
     </div>
   );
 };
