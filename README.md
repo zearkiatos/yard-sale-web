@@ -15,3 +15,5 @@ Github: [https://zearkiatos.github.io/yard-sale-web/](https://zearkiatos.github.
 Gitlab 🦊: [https://caprilespe.gitlab.io/yard-sale-web/](https://caprilespe.gitlab.io/yard-sale-web/)
 
 Vercel: [https://yard-sale-web.vercel.app/](https://yard-sale-web.vercel.app/)
+
+Firebase 🔥: [https://sale-yard-web.firebaseapp.com/](https://sale-yard-web.firebaseapp.com/)
