@@ -1,5 +1,5 @@
 import React from "react";
-import "@styles/NewPassword.scss";
+import "@styles/newPassword.scss";
 import logo from '@logos/logo_yard_sale.svg'
 
 const NewPassword = () => {

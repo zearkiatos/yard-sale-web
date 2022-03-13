@@ -16,4 +16,4 @@ Gitlab 🦊: [https://caprilespe.gitlab.io/yard-sale-web/](https://caprilespe.gi
 
 Vercel: [https://yard-sale-web.vercel.app/](https://yard-sale-web.vercel.app/)
 
-Firebase 🔥: [https://sale-yard-web.web.app/](https://sale-yard-web.web.app/)
+Firebase 🔥: [https://sale-yard-web.firebaseapp.com/](https://sale-yard-web.firebaseapp.com/)
