@@ -47,6 +47,8 @@ build-app:
   script:
     - echo "Deploy a review app 🛠"
     - npm run build
+    - echo "ENVIRONMENT=${ENVIRONMENT}" > .env
+    - echo "YARD_SALE_API_BASE_URL=${YARD_SALE_API_BASE_URL}" >> .env
   artifacts:
     expire_in: 1hr
     paths:
