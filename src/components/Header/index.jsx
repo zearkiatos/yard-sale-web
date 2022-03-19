@@ -1,5 +1,6 @@
 import React, { Fragment, useState, useContext } from "react";
 import Menu from "@components/Menu";
+import ShoppingCart from "@containers/ShoppingCart";
 import "@styles/header.scss";
 import AppContext from "@context/AppContext";
 import iconMenu from "@icons/icon_menu.svg";
@@ -7,12 +8,17 @@ import logo from "@logos/logo_yard_sale.svg";
 import shoppingCartIcon from "@icons/icon_shopping_cart.svg";
 const Header = () => {
   const [toggle, setToggle] = useState(false);
+  const [shoppingCartToggle, setShoppingCartToggle] = useState(false);
   const { state } = useContext(AppContext);
   const handleToggle = () => setToggle(!toggle);
+  const handleShoppingCartToggle = () =>
+    setShoppingCartToggle(!shoppingCartToggle);
   const renderMenu = () => toggle && <Menu />;
+  const renderShoppingCart = () => shoppingCartToggle && <ShoppingCart />;
   return (
     <Fragment>
       <nav className="secondary-menu">{renderMenu()}</nav>
+      {renderShoppingCart()}
       <nav>
         <img className="menu" src={iconMenu} alt="menu" />
         <div className="navbar-left">
@@ -44,7 +50,11 @@ const Header = () => {
               caprilespe@outlook.com
             </li>
             <li className="navbar-shopping-cart">
-              <img src={shoppingCartIcon} alt="Shopping cart" />
+              <img
+                src={shoppingCartIcon}
+                alt="Shopping cart"
+                onClick={handleShoppingCartToggle}
+              />
               {state.cart.length > 0 && <div>{state.cart.length}</div>}
             </li>
           </ul>
