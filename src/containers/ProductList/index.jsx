@@ -7,7 +7,7 @@ const ProductList = () => {
   const products = useGetProducts();
   const productListRender = products.map(({ id, images, title, price }) => {
     return (
-      <ProductCard key={id} image={images[0]} title={title} price={price} />
+      <ProductCard key={id} id={id} image={images[0]} title={title} price={price} />
     );
   });
   return (

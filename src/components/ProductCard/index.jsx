@@ -3,7 +3,7 @@ import "@styles/productCard.scss";
 import AppContext from "@context/AppContext";
 import addToCartIcon from "@icons/bt_add_to_cart.svg";
 
-const ProductCard = ({ image, price, title }) => {
+const ProductCard = ({ id, image, price, title }) => {
   const { addToCart } = useContext(AppContext);
 
   const handleClick = (product) => {
@@ -17,7 +17,7 @@ const ProductCard = ({ image, price, title }) => {
           <p>${price.toFixed(2)}</p>
           <p>{title}</p>
         </div>
-        <figure onClick={() => handleClick({ image, price, title })}>
+        <figure onClick={() => handleClick({ id, image, price, title })}>
           <img src={addToCartIcon} alt="" />
         </figure>
       </div>
