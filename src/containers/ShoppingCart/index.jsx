@@ -6,10 +6,11 @@ import arrow from "@icons/flechita.svg";
 import { totalization } from "@utils";
 import OrderDetails from "@containers/OrderDetails";
 
-const ShoppingCart = () => {
+const ShoppingCart = ({ closeModal }) => {
   const {
     state: { cart }
   } = useContext(AppContext);
+  const closeModalHandle = () => closeModal();
   const sumTotal = ( prices = cart.map(product => product.price)) => totalization(prices);
   const renderOrderDetails = () =>
     cart.length > 0 ? (
@@ -20,8 +21,8 @@ const ShoppingCart = () => {
   return (
     <aside className="product-detail">
       <div className="title-container">
-        <img src={arrow} alt="Arrow" />
-        <p className="title">My order</p>
+        <img src={arrow} alt="Arrow" onClick={closeModalHandle} />
+        <p className="shopping-cart-title">My order</p>
       </div>
       <div className="my-order-content">{renderOrderDetails()}</div>
       <Total total={sumTotal()} />

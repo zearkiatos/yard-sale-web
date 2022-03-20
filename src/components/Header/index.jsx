@@ -14,7 +14,8 @@ const Header = () => {
   const handleShoppingCartToggle = () =>
     setShoppingCartToggle(!shoppingCartToggle);
   const renderMenu = () => toggle && <Menu />;
-  const renderShoppingCart = () => shoppingCartToggle && <ShoppingCart />;
+  const renderShoppingCart = () =>
+    shoppingCartToggle && <ShoppingCart closeModal={handleShoppingCartToggle} />;
   return (
     <Fragment>
       <nav className="secondary-menu">{renderMenu()}</nav>
