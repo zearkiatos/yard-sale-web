@@ -6,7 +6,6 @@ import "@styles/itemCard.scss";
 const ItemCard = ({ id, image, title, price }) => {
   const { removeFromCart } = useContext(AppContext);
   const removeHandle = (product) => {
-    console.log(product);
     removeFromCart(product);
   };
   return (

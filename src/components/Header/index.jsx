@@ -19,7 +19,7 @@ const Header = () => {
     <Fragment>
       <nav className="secondary-menu">{renderMenu()}</nav>
       {renderShoppingCart()}
-      <nav>
+      <nav className="header-bar">
         <img className="menu" src={iconMenu} alt="menu" />
         <div className="navbar-left">
           <img className="nav-logo" src={logo} alt="logo" />

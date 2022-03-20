@@ -1,8 +1,12 @@
-nav {
-    display: flex;
-    padding: 0 24px;
-    justify-content: space-between;
-    border-bottom: 1px solid var(--very-light-pink);
+nav.header-bar {
+    top             : 0;
+    position        : fixed;
+    display         : flex;
+    padding-top     : 0.5rem;
+    justify-content : space-between;
+    border-bottom   : 1px solid var(--very-light-pink);
+    background-color: var(--white);
+    width           : 100%;
 }
 
 .menu {
@@ -16,12 +20,12 @@ nav {
 
 .navbar-left ul,
 .navbar-right ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+    list-style : none;
+    padding    : 0;
+    margin     : 0;
+    display    : flex;
     align-items: center;
-    height: 60px;
+    height     : 60px;
 }
 
 .navbar-left {
@@ -29,49 +33,50 @@ nav {
 }
 
 .navbar-left ul {
-    display: flex;
+    display    : flex;
     margin-left: 12px;
 }
 
 .navbar-left ul li a,
 .navbar-right ul li a {
     text-decoration: none;
-    color: var(--very-light-pink);
-    border: 1px solid var(--white);
-    padding: 8px;
-    border-radius: 8px;
+    color          : var(--very-light-pink);
+    border         : 1px solid var(--white);
+    padding        : 8px;
+    border-radius  : 8px;
 }
 
 .navbar-left ul li a:hover,
 .navbar-right ul li a:hover {
     border: 1px solid var(--hospital-green);
-    color: var(--hospital-green);
+    color : var(--hospital-green);
 }
 
 .navbar-email {
-    cursor: pointer;
-    color: var(--very-light-pink);
-    font-size: var(--sm);
+    cursor      : pointer;
+    color       : var(--very-light-pink);
+    font-size   : var(--sm);
     margin-right: 12px;
 }
 
 .navbar-shopping-cart {
-    position: relative;
+    position    : relative;
+    margin-right: 20px;
 }
 
 .navbar-shopping-cart div {
-    width: 16px;
-    height: 16px;
+    width           : 16px;
+    height          : 16px;
     background-color: var(--hospital-green);
-    border-radius: 50%;
-    font-size: var(--sm);
-    font-weight: bold;
-    position: absolute;
-    top: -6px;
-    right: -2px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius   : 50%;
+    font-size       : var(--sm);
+    font-weight     : bold;
+    position        : absolute;
+    top             : -6px;
+    right           : 0px;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
 }
 
 @media (max-width: 640px) {
@@ -89,10 +94,10 @@ nav {
 }
 
 .secondary-menu {
-    position:absolute;
-    top: 3.7rem;
+    position     : absolute;
+    top          : 3.7rem;
     border-bottom: none;
-    right:0;
-    margin-right: 8rem;
+    right        : 0;
+    margin-right : 8rem;
 
 }
