@@ -9,7 +9,8 @@ const useGetProducts = () => {
 
   useEffect(async () => {
     const response = await axios(API);
-    setProducts(response.data);
+    const dataMapped = response.data.map(product => ({...product, added: false}))
+    setProducts(dataMapped);
   }, []);
 
   return products;
