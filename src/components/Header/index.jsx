@@ -1,6 +1,7 @@
 import React, { Fragment, useState, useContext } from "react";
 import Menu from "@components/Menu";
 import ShoppingCart from "@containers/ShoppingCart";
+import MobileMenu from '@components/MobileMenu';
 import "@styles/header.scss";
 import AppContext from "@context/AppContext";
 import iconMenu from "@icons/icon_menu.svg";
@@ -9,19 +10,22 @@ import shoppingCartIcon from "@icons/icon_shopping_cart.svg";
 const Header = () => {
   const [toggle, setToggle] = useState(false);
   const [shoppingCartToggle, setShoppingCartToggle] = useState(false);
+  const [toggleMobileMenu, setToggleMobileMenu] = useState(false);
   const { state } = useContext(AppContext);
   const handleToggle = () => setToggle(!toggle);
   const handleShoppingCartToggle = () =>
     setShoppingCartToggle(!shoppingCartToggle);
+  const handleMobileMenu = () => setToggleMobileMenu(!toggleMobileMenu);
   const renderMenu = () => toggle && <Menu />;
   const renderShoppingCart = () =>
     shoppingCartToggle && <ShoppingCart closeModal={handleShoppingCartToggle} />;
   return (
     <Fragment>
+      {toggleMobileMenu && <MobileMenu />}
       <nav className="secondary-menu">{renderMenu()}</nav>
       {renderShoppingCart()}
       <nav className="header-bar">
-        <img className="menu" src={iconMenu} alt="menu" />
+        <img className="menu" src={iconMenu} alt="menu" onClick={handleMobileMenu} />
         <div className="navbar-left">
           <img className="nav-logo" src={logo} alt="logo" />
           <ul>
